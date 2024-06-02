@@ -31,7 +31,7 @@ public class EmpController {
     }
 
 
-    @GetMapping("/getEmp/{empId")
+    @GetMapping("/getEmp/{empId}")
     public ResponseEntity<Object> getEmpById(@PathVariable int empId)throws ResourceNotFoundException
     {
         Optional<Employees>e=empServiceImpl.getEmpById(empId);
